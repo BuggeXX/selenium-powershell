@@ -69,11 +69,11 @@ VariablesToExport    = @()
 DscResourcesToExport = @()
 FileList             = @('.\assemblies',
                          '.\Examples',
-                         '.\ChangeLog.txt',
+                         '.\ChangeLog.md',
                          '.\README.md',
                          '.\additions.md',
                          '.\Selenium.psm1'
-                        ' .\SeleniumClasses.ps1'
+                         '.\SeleniumClasses.ps1'
                          '.\Selenium.tests.ps1'
                          '.\Selenium-Binary-Updater.ps1')
 
