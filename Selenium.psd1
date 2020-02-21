@@ -12,7 +12,7 @@ ModuleVersion        = '3.0.0'
 GUID                 = 'a3bdb8c3-c150-48a8-b56d-cd4d43f46a26'
 Author               = 'Adam Driscoll'
 CompanyName          = 'Unknown'
-Copyright            = '(c) 2019 Adam Driscoll. All rights reserved.'
+Copyright            = '(c) 2020 Adam Driscoll. All rights reserved.'
 Description          = 'Web automation using the Selenium Web Driver'
 ScriptsToProcess     = @('SeleniumClasses.ps1')
 RootModule           =   'Selenium.psm1'
@@ -33,6 +33,7 @@ FunctionsToExport    = @(
     'Set-SeCookie' ,
     'Get-SeElement',
     'Get-SeElementAttribute' ,
+    'Get-SeElementCssValue' ,
     'Get-SeSelectionOption',
     'Get-SeKeys' ,
     'Send-SeKeys' ,
@@ -69,11 +70,9 @@ VariablesToExport    = @()
 DscResourcesToExport = @()
 FileList             = @('.\assemblies',
                          '.\Examples',
-                         '.\ChangeLog.txt',
+                         '.\ChangeLog.md',
                          '.\README.md',
-                         '.\additions.md',
                          '.\Selenium.psm1'
-                        ' .\SeleniumClasses.ps1'
                          '.\Selenium.tests.ps1'
                          '.\Selenium-Binary-Updater.ps1')
 
@@ -86,7 +85,7 @@ PrivateData          = @{
 
         # A URL to an icon representing this module.
         # IconUri = ''
-        #Prerelease = 'beta1'
+        Prerelease = 'beta2'
     } # End of PSData hashtable
 
 } # End of PrivateData hashtable
